@@ -5,6 +5,11 @@ Java web service to convert integers to roman numeral strings
 
 Input must be any integer value in the range 1-3999.
 
+Reference for Integer to Roman Conversion:
+
+https://en.wikipedia.org/wiki/Roman_numerals
+
+
 **Prerequisites:**
 * Docker
 * Docker Compose
