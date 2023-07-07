@@ -9,6 +9,8 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.*;
 
+import java.util.List;
+
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class RomanNumeralIntegrationTests {
     @LocalServerPort
@@ -25,7 +27,7 @@ public class RomanNumeralIntegrationTests {
     @Test
     public void TestGetRomanNumeralConversion() throws JSONException {
         int number = 10;
-        String expectedRomanNumeral = "{\"romanValue\":\"X\",\"number\":10}";
+        String expectedRomanNumeral = "{\"input\":\"10\",\"output\":\"X\"}";
 
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
         ResponseEntity<String> response = restTemplate.exchange(createURLWithPort("/romannumeral?query=" + number), HttpMethod.GET, entity, String.class);
