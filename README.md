@@ -124,3 +124,8 @@ Input must be any integer value in the range 1-3999.
 * Spring Web
 * Spring Boot Actuators
 * JUnit 5
+
+
+**Error and Exception Handling**
+1. ErrorController Spring Boot Interface
+2. ResponseEntity class provided by Spring Framework for Error and Exception Handling

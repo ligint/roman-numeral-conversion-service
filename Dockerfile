@@ -8,8 +8,8 @@ WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 
-# Build the application using Maven
-RUN mvn package -DskipTests
+# Run Maven build to package the application and execute tests
+RUN mvn clean install
 
 # Use a lightweight base image with Java only
 FROM openjdk:19-jdk-slim
