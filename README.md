@@ -13,50 +13,50 @@ Input must be any integer value in the range 1-3999.
 
 1. Clone the repository
 2. Start your docker service
-3. cd roman-numeral-conversion-service
+3. Change the directory 
+   ``` cd roman-numeral-conversion-service ```
 4. Build the application:
-   Command : docker-compose build
+   ``` Command : docker-compose build ```
 5. Start the application
-   docker-compose up -d
-6. Access the API:
-The API is now running and can be accessed at http://localhost:8080/romannumeral
+   ``` docker-compose up -d ```
+6. Access the API: http://localhost:8080/romannumeral
 
 
 **API Info:**
 
 * Request: GET http://localhost:8080/romannumeral?query=10
 
-Response: { numeral: 10, romanNumeral: "X" }
+   ``` Response: {"input":"10","romanNumeral":"X"} ```
 
 * Request: GET http://localhost:8080/romannumera?query=-10
 
-Response: 400 BAD_REQUEST
+   ``` Response: 400 BAD_REQUEST ```
 
 * Request: GET http://localhost:8080/romannumera?query=3999
 
-Response: 400 BAD_REQUEST
+  ``` Response: 400 BAD_REQUEST ```
 
-Spring boot actuator endpoints(Eg: Metrics, Monitoring, Logging etc.) :
+**Spring boot actuator endpoints(Eg: Metrics, Monitoring, Logging etc.)** :
 
 * Request: GET http://localhost:8080/actuator
 
-Response: Information regarding all the actuators
+   ``` Response: Information regarding all the actuators. ```
 
 * Request: GET http://localhost:8080/actuator/info
 
-Response: Custom Application Information like version numbers or environment-specific details
+   ``` Response: Custom Application Information like version numbers or environment-specific details. ```
 
 * Request: GET http://localhost:8080/actuator/metrics
 
-Response: Information regarding application metrics like request counts, response times, memory usage etc
+   ``` Response: Information regarding application metrics like request counts, response times, memory usage etc. ```
 
 * Request: GET http://localhost:8080/actuator/health
 
-Response: Information regarding health of the application
+   ``` Response: Information regarding health of the application.```
 
 * Request: GET http://localhost:8080/actuator/loggers
 
-Response: It enables you to dynamically manage logging configurations without restarting the application
+   ``` Response: It enables you to dynamically manage logging configurations without restarting the application. ```
 
 
 **Project Structure**
