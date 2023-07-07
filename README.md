@@ -60,7 +60,7 @@ Response: It enables you to dynamically manage logging configurations without re
 
 
 **Project Structure**
-
+```
 ├── src/
 │   ├── main/
 │   │   ├── java/
@@ -85,6 +85,7 @@ Response: It enables you to dynamically manage logging configurations without re
 │── Dockerfile
 ├── pom.xml
 └── README.md
+```
 
 
 * src/main/java: Contains the main Java source code for your project.
