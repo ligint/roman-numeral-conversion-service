@@ -36,6 +36,11 @@ public class RomanNumeralModel {
 
     public RomanNumeralModel(int number){
         this.number = number;
+        /** In this case we are calling a method inside a constructor
+         * to initialize the roman field.
+         * The method call aligns with the responsibility of the class
+         * and is only used for initialization
+         * **/
         this.romanValue = convertToRoman(number);
     }
 
