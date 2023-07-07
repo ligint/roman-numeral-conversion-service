@@ -14,11 +14,17 @@ Input must be any integer value in the range 1-3999.
 1. Clone the repository
 2. Start your docker service
 3. Change the directory 
+
    ``` cd roman-numeral-conversion-service ```
+
 4. Build the application:
+
    ``` Command : docker-compose build ```
+
 5. Start the application
+
    ``` docker-compose up -d ```
+
 6. Access the API: http://localhost:8080/romannumeral
 
 

@@ -11,6 +11,10 @@ public class RomanNumeralUnitTests {
 
     private final RomanNumeralController cont = new RomanNumeralController();
 
+    /**
+     * Test to check if the conversion is Valid and
+     * returns proper Roman Numeral
+     * **/
     @Test
     @DisplayName("Valid Tests for Integer to Roman Conversion")
     public void testConversionToRoman_ValidNumber(){
@@ -29,8 +33,12 @@ public class RomanNumeralUnitTests {
         Assertions.assertEquals("{\"input\":\"3999\",\"output\":\"MMMCMXCIX\"}", cont.romanNumeral(3999).getBody());
     }
 
+    /**
+     * Test to check if input in not Valid
+     * returns proper Roman Numeral
+     * **/
     @Test
-    @DisplayName("In-Valid Tests for Integer to Roman Conversion")
+    @DisplayName("In-Valid Input Tests for Integer to Roman Conversion")
     public void testConversionToRoman_InvalidNumber(){
 
         Assertions.assertEquals(HttpStatus.BAD_REQUEST, cont.romanNumeral(0).getStatusCode());
